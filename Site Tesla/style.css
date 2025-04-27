@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    /*espaçamento externo*/
+    padding: 0;
+    /* espaçamento interno*/
+    box-sizing: border-box;
+}
+
+html {
+scroll-snap-type: y mandatory;/*  essa função da scroll da pagida toda de uma vez com uma mandada e que recebe é o item */
+}
+/*      * asteristico significa tudoou eja alterar tudo!*/
+video, .model-x,.model-3 {
+    width: 100%;
+    /*Largura*/
+    height: 100%;
+    /* Altura*/
+    position: absolute;
+    /*Posiciona o item na posição que desejar*/
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /*Define quem fica na frente ou atraz*/
+    object-fit: cover;
+    filter: brightness(60%);
+    /* deixa o video um pouco mais escuro*/
+}
+
+.logo {
+    position: fixed;
+    filter: brightness(100);
+    width: 120px;
+}
+
+.item {
+    display: flex;
+    /*  display flex habilita algumas propriedades do CSS*/
+
+    justify-content: space-between;
+    /* Cria espaço entre os itens*/
+    flex-direction: column;
+    /* Deixa um item abaixo do outro*/
+    position: relative;
+    width: 100vw;
+    /* Tela toda - altura*/
+    height: 100vh;
+    /* Tela toda - Largura*/
+scroll-snap-align: start; /* este recebe a mandada do scroll*/
+
+
+
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    /*  almenta o tamanho sa letras*/
+}
+
+.sub-titulo {
+    color: white;
+}
+
+.info-carro {
+
+    margin-top: 80px;
+    text-align: center;
+    /*alinha item ao centro*/
+}
+
+
+
+.rodape {
+    text-align: center;
+    /*alinha item ao centro*/
+}
+
+button {
+    background-color: rgb(34, 34, 34, 0.7);
+    /* o ultimo numero altera a transparemncia*/
+    color: white;
+    padding: 7px 80px;
+    /*almenta o tamanho do botão 1 numero altera o tamanho  cima e embaixo, e o segundo número altera o o tamanho da esquerda e direita*/
+    border-radius: 7px;
+    /*aredondar cantos*/
+    border: none;
+    /* tira a borda do botão*/
+    cursor: pointer;
+    /* coloca a mãosinha quando passa o mause me cima*/
+}
+
+.test-draiver {
+    background-color: white;
+    color: black;
+}
+
+.texto-rodape {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    position: fixed;
+    top: 30px;
+    width: 400px;
+    height: 100%;
+    z-index: 3;
+    left: -40%;
+    transition: 1.6s;
+}
